@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Jogo da Memória</h1>
+            <div class="info">
+                <p><strong>Pontuação:</strong> <span id="score">0</span></p>
+                <p><strong>Tentativas:</strong> <span id="attempts">0</span></p>
+                <label for="difficulty">Nível:</label>
+                <select id="difficulty">
+                    <option value="easy">Fácil</option>
+                    <option value="medium">Médio</option>
+                    <option value="hard">Difícil</option>
+                </select>
+                <button id="start-game">Iniciar Jogo</button>
+            </div>
+        </header>
+        <main id="game-board" class="game-board">
+            <!-- Cartas serão inseridas dinamicamente -->
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
